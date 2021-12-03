@@ -51,6 +51,7 @@ export default {
   methods: {
     emitData(data) {
       this.$store.commit('header/setHeader', data);
+      return this.$store.commit('general/setMobile', true)
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" :class="[ isSize ? 'isSize':null, openMenu && hasToken ? 'openMenu':null]">
+  <div class="wrapper" :class="[ isSize ? 'isSize':null, openMenu && hasToken ? 'openMenu':null, getMobile ? 'mobile' : null]">
     <div class="overflow">
       <div class="contain">
         <switchSize @size="isSize = !isSize" />
@@ -36,6 +36,7 @@ export default {
     return {
       searchKeys: '',
       openMenu: false,
+      localProperty: false,
       isSize: process.isClient
         ? localStorage.getItem('false') || null
         : false
@@ -44,7 +45,10 @@ export default {
   computed: {
     hasToken() {
       return this.$store.getters.hasToken
-    }
+    },
+    getMobile() {
+      return this.$store.getters["general/mobile"];
+    },
   },
   mounted() {
     if (localStorage.getItem('isSize')) {

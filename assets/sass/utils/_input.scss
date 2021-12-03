@@ -21,6 +21,11 @@ input, textarea, .textarea {
   background-image: none;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 
+  @media screen and (max-width: 1024px) {
+    padding: 4px;
+    min-height: 30px;
+  }
+
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $gray;
   }

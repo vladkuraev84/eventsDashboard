@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  transition: 0s all !important;
+
+  @media screen and (min-width: 601px) {
+    transition: .17s all !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    min-height: 100vh;
+  }
 }
 
 .msg {
@@ -21,9 +30,18 @@
   clear: both;
   color: #000000;
 
+  @media screen and (max-width: 1024px) {
+    padding: 15px;
+    margin: 10px 8px 0 8px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 90%;
+  }
+
   &-wr {
-    //display: flex;
-    //flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   &-date {
@@ -33,5 +51,10 @@
     bottom: 6px;
     color: $gray;
     user-select: none;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 10px;
+      bottom: 2px;
+    }
   }
 }

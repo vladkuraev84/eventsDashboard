@@ -3,11 +3,20 @@
   display: flex;
   align-items: center;
   padding: $px14 ($px12+$px10);
+  background-color: #FFFFFF;
+
+  @media screen and (max-width: 1024px) {
+    padding: 8px 12px;
+  }
 }
 .chatName {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
 
   strong, span {
     white-space: nowrap;
@@ -27,6 +36,10 @@
   top: 14px;
   left: 50%;
   z-index: 2;
+
+  @media screen and (max-width: 600px) {
+    top: 22px;
+  }
 
   .btn-more {
     position: fixed;

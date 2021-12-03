@@ -2,7 +2,6 @@
   font-family: 'Material Icons', serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -21,4 +20,11 @@
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+
+  @media screen and (min-width: 1025px) {
+    font-size: 24px;  /* Preferred icon size */
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
 }

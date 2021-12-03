@@ -4,9 +4,18 @@
   align-items: center;
   flex-direction: row;
   padding: $px14 ($px12+$px10);
+  background-color: #FFFFFF;
+
+  @media screen and (max-width: 1024px) {
+    padding: 8px 12px;
+  }
 
   .burger {
     margin-right: 22px;
+
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+    }
   }
 
   .search-input {

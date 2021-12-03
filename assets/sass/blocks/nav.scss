@@ -4,6 +4,35 @@
     width: 100%;
     border-right: 1px solid $gray-light;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 250px;
+    }
+
+    @media screen and (max-width: 600px) {
+      max-width: 100%;
+      border-right: none;
+
+
+      + .main {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        transition: .17s all;
+        min-height: 100vh;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    .main {
+      right: 0;
+      transition: .17s all;
+    }
   }
 }
 
@@ -26,6 +55,10 @@
       li {
         +li {
           margin-top: $px12;
+
+          @media screen and (max-width: 1024px) {
+            margin-top: 10px;
+          }
         }
       }
 
@@ -38,8 +71,20 @@
         height: 45px;
         padding-left: 20px;
 
-        &:hover {
-          background: $bacGrayHover;
+        @media screen and (min-width: 825px) {
+          &:hover {
+            background: $bacGrayHover;
+          }
+        }
+
+
+        @media screen and (max-width: 1024px) {
+          height: 32px;
+          padding-left: 12px;
+
+          .material-icons {
+            font-size: 20px;
+          }
         }
 
         span {
@@ -87,14 +132,22 @@
     height: 80px;
     padding: $px12;
 
+    @media screen and (max-width: 1024px) {
+      height: 50px;
+      padding: 6px;
+    }
+
     &:hover {
       background: $bacGrayHover;
     }
 
-    &.nuxt-link-exact-active {
-      background: $blue;
-      color: #ffffff;
+      &.nuxt-link-exact-active {
+        @media screen and (min-width: 825px) {
+          background: $blue;
+          color: #ffffff;
+        }
     }
+
   }
 
   .name-block {
@@ -110,8 +163,17 @@
     flex-direction: column;
     margin-right: $px12;
 
+    @media screen and (max-width: 1024px) {
+      width: 30px;
+      height: 30px;
+    }
+
     .material-icons {
       font-size: 55px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -131,9 +193,19 @@
     &-msg {
       margin-top: 8px;
       font-weight: normal;
+
+      @media screen and (max-width: 1024px) {
+        margin-top: 4px;
+      }
     }
     &-utils {
       height: 100%;
+
+      @media screen and (max-width: 1024px) {
+        .material-icons {
+          font-size: 14px;
+        }
+      }
     }
   }
 }

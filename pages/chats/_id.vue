@@ -24,7 +24,7 @@ export default {
       num: 20
     }
   },
-  mounted() {
+  /* mounted() {
      setTimeout( () => {
       const el = this.$el.querySelectorAll('.msg');
       const lastOne = el[el.length-1];
@@ -33,6 +33,6 @@ export default {
         lastOne.scrollIntoView({behavior: 'smooth'});
       }
     }, 500)
-  }
+  } */
 }
 </script>

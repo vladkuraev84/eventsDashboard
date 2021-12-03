@@ -1,0 +1,24 @@
+
+.welcome-page {
+  flex: 1;
+  background-color: $bgStart;
+  color: #ffffff;
+
+  .title {
+    +p {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.auth-ul {
+  li {
+    padding: 5px;
+  }
+}
+
+.index-logo-top {
+  background: rgb(79, 130, 215);
+  margin-bottom: 3rem;
+}

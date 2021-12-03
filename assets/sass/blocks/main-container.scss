@@ -1,0 +1,37 @@
+
+.main-container {
+  position: relative;
+  padding: $px12;
+  background-image: url("@/assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.msg {
+  position: relative;
+  width: auto;
+  min-width: 100px;
+  max-width: 70%;
+  height: auto;
+  padding: 25px 25px 35px;
+  margin: 20px 15px 0 15px;
+  background: #FFF;
+  border-radius: 7px;
+  clear: both;
+  color: #000000;
+
+  &-wr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &-date {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    color: $gray;
+    user-select: none;
+  }
+}

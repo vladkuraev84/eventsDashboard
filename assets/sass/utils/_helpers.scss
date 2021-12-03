@@ -1,0 +1,30 @@
+html, .wrapper {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $ffRegular;
+  background-color: $bacGrayLight;
+  display: flex;
+  flex-direction: column;
+}
+
+a, button {
+  transition: .17s all;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.light-gray {
+  color: $gray-light;
+}

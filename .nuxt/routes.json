@@ -1,0 +1,37 @@
+[
+  {
+    "name": "chats",
+    "path": "/chats",
+    "component": "/media/vlad/hard-disk/vlad/personal/eventsDashboard/eventsDashboard/pages/chats/index.vue",
+    "chunkName": "pages/chats/index",
+    "_name": "_17a92be8"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/media/vlad/hard-disk/vlad/personal/eventsDashboard/eventsDashboard/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_71f39573"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "/media/vlad/hard-disk/vlad/personal/eventsDashboard/eventsDashboard/pages/settings.vue",
+    "chunkName": "pages/settings",
+    "_name": "_25dd0fee"
+  },
+  {
+    "name": "chats-id",
+    "path": "/chats/:id",
+    "component": "/media/vlad/hard-disk/vlad/personal/eventsDashboard/eventsDashboard/pages/chats/_id.vue",
+    "chunkName": "pages/chats/_id",
+    "_name": "_5be10850"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/media/vlad/hard-disk/vlad/personal/eventsDashboard/eventsDashboard/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_af681b48"
+  }
+]

@@ -1,0 +1,30 @@
+@import "utils/reset";
+@import "utils/icons";
+@import "utils/margin";
+@import "utils/transition-page";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/button";
+@import "utils/input";
+
+@import "blocks/scrolling";
+
+@import "blocks/burger";
+@import "blocks/utilsBlock";
+@import "blocks/general";
+@import "blocks/welcome";
+@import "blocks/alert";
+@import "blocks/form";
+@import "blocks/login";
+@import "blocks/nav";
+@import "blocks/main-header";
+@import "blocks/main-container";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.17;
+}

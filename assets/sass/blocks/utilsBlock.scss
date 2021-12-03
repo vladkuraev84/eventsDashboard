@@ -1,0 +1,15 @@
+
+.utils-block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: $px14 ($px12+$px10);
+
+  .burger {
+    margin-right: 22px;
+  }
+
+  .search-input {
+    flex: 1;
+  }
+}

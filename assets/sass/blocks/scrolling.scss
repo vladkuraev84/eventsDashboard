@@ -1,0 +1,56 @@
+
+$maxHeight: 70vh;
+
+.size-body {
+  .overflow {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+  }
+  .contain {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .nav-chats, .main-container {
+    max-height: 100vh;
+  }
+}
+
+.contain  {
+  height: $maxHeight;
+}
+
+.utils-block, .main-header {
+  height: 68px;
+}
+
+.nav-chats, .main-container {
+  overflow-y: auto;
+  height: 100%;
+  max-height: calc(70vh - 68px - 24px);
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-color: $gray $gray-light;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $gray-light;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: 20px;
+  border: 1px solid $gray-light;
+}

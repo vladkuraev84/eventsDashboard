@@ -1,0 +1,38 @@
+
+.burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18px;
+  height: 12px;
+  cursor: pointer;
+
+  div {
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $gray;
+  }
+}
+
+
+/*.open.burger{
+  div{
+    &:first-child {
+      top: -6px;
+      transform: rotateZ(45deg);
+    }
+    &:last-child {
+      top: 6px;
+      transform: rotateZ(45deg);
+    }
+    &:nth-child(2) {
+      width: 20px;
+      top: 0;
+      right: 13px;
+      transform: rotateZ(-45deg);
+    }
+  }
+}*/

@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: 'IBM-Plex-Medium';
+  src: url('assets/fonts/IBMPlexMedium/IBMPlexSans-Medium.eot');
+  src: local('☺'), url('assets/fonts/IBMPlexMedium/IBMPlexSans-Medium.woff') format('woff'),
+  url('assets/fonts/IBMPlexMedium/IBMPlexSans-Medium.ttf') format('truetype'),
+  url('assets/fonts/IBMPlexMedium/IBMPlexSans-Medium.otf') format('otf');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM-Plex-Regular';
+  src: url('assets/fonts/IBMPlexRegular/IBMPlexSans-Regular.eot');
+  src: local('☺'), url('assets/fonts/IBMPlexRegular/IBMPlexSans-Regular.woff') format('woff'),
+  url('assets/fonts/IBMPlexRegular/IBMPlexSans-Regular.ttf') format('truetype'),
+  url('assets/fonts/IBMPlexRegular/IBMPlexSans-Regular.otf') format('otf');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM-Plex-SemiBold';
+  src: url('assets/fonts/IBMPlexSemibold/IBMPlexSans-SemiBold.eot');
+  src: local('☺'), url('assets/fonts/IBMPlexSemibold/IBMPlexSans-SemiBold.woff') format('woff'),
+  url('assets/fonts/IBMPlexSemibold/IBMPlexSans-SemiBold.ttf') format('truetype'),
+  url('assets/fonts/IBMPlexSemibold/IBMPlexSans-SemiBold.otf') format('otf');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+$ffRegular: 'IBM-Plex-Regular', sans-serif;
+$ffSemibold: 'IBM-Plex-SemiBold', sans-serif;
+$ffMedium: 'IBM-Plex-Medium', sans-serif;
+
+$px10: 10px;
+$px12: 12px;
+$px14: 14px;
+
+//Colors
+
+$menuLinks: #ffffff;
+$colorBody: #333333;
+$green: #28BEB2;
+$gray: #666;
+$gray-dark: #555555;
+$gray-light: #4FAFA7;
+$wh: #ffffff;
+$primary: #194999;
+$blue: #419fd9;
+$primaryLight: #2FB1EB;
+$primaryLightHover: #50BEEE;
+
+
+//Background
+$bacMenu: #131722;
+$bacTxt: #f4f5f7;
+$bacGrayLight: #F5F6F8;
+$bacGrayHover: #eeeeee;
+$whBg: #ffffff;
+$bgStart: #2c2540;
+$bgDanger: #b73a3a;
+$bgGreenLight: #e4ffef;

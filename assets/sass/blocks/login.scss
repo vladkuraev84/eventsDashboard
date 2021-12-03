@@ -1,0 +1,15 @@
+.login {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+
+  .alert {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

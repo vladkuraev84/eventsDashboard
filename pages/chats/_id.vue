@@ -25,14 +25,14 @@ export default {
     }
   },
   mounted() {
-    /* setTimeout( () => {
+     setTimeout( () => {
       const el = this.$el.querySelectorAll('.msg');
       const lastOne = el[el.length-1];
 
       if (lastOne) {
         lastOne.scrollIntoView({behavior: 'smooth'});
       }
-    }, 500) */
+    }, 500)
   }
 }
 </script>
